@@ -2,7 +2,7 @@
 # https://github.com/theme-particlex/hexo-theme-particlex
 
 # Avatar image
-avatar: /images/avatar.jpg
+avatar: /images/dieqi.png
 
 # Home page background image
 background:
@@ -49,11 +49,14 @@ menu:
 card:
     enable: true
     description: |
-        Description
-        ...
+        欢迎来到歌静桃花的世界
+        第一次写博客，学习中...
     iconLinks:
     friendLinks:
-        Argvchs: https://argvchs.github.io
+        {
+            github: https://github.com/yijie159?tab=repositories,
+            csdn: https://blog.csdn.net/qq_50895002?spm=1000.2115.3001.5343
+        }
 
 # Footer info
 footer:
