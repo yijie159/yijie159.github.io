@@ -55,7 +55,8 @@ card:
     friendLinks:
         {
             github: https://github.com/yijie159?tab=repositories,
-            csdn: https://blog.csdn.net/qq_50895002?spm=1000.2115.3001.5343
+            csdn: https://blog.csdn.net/qq_50895002?spm=1000.2115.3001.5343,
+            gitee: https://gitee.com/song-jing-peach-blossom
         }
 
 # Footer info
