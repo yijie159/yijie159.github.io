@@ -83,7 +83,7 @@ highlight:
 
 # KaTeX math rendering
 math:
-    enable: false
+    enable: true
 
 # Image preview
 preview:
@@ -160,3 +160,8 @@ twikoo:
     region:
     path: location.pathname
     lang:
+# _config.yml
+toc:
+  enable: true  # 全局开启目录（默认可能为 false，需手动改为 true）
+  depth: 3      # 目录显示的标题层级（1-6，如 3 表示显示 h1-h3）
+  position: right  # 目录位置（可选 left/right，根据主题布局调整）
