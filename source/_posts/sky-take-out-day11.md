@@ -1,6 +1,8 @@
 ---
 title: sky-take-out-day11
 date: 2025-10-29 08:36:10
+categories:
+- 苍穹外卖
 tags:
 - 苍穹外卖
 - JAVA
