@@ -477,6 +477,36 @@
 .article .content {
     margin: 50px 0;
 }
+.post-toc {
+    background: #f6f8fa;
+    border: 1px solid #dbe7f3;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 14px 18px;
+}
+.post-toc[open] {
+    max-height: 360px;
+    overflow: auto;
+}
+.post-toc summary {
+    color: #5c6b72;
+    cursor: pointer;
+    font-weight: bold;
+}
+.post-toc ol,
+.post-toc ul {
+    margin: 10px 0 0;
+    padding-left: 24px;
+}
+.post-toc li {
+    margin: 5px 0;
+}
+.post-toc a {
+    color: #5c6b72;
+}
+.post-toc a:hover {
+    color: #66afef;
+}
 .article .info .date {
     color: #5c6b72;
     display: inline-block;

@@ -40,6 +40,12 @@
         </span>
         <% } %>
     </div>
+    <% if (theme.toc && theme.toc.enable) { %>
+    <details class="post-toc">
+        <summary>文章目录</summary>
+        <%- toc(page.content, { list_number: false, maxdepth: theme.toc.depth || 3, anchor: true }) %>
+    </details>
+    <% } %>
     <% if (theme.crypto.enable && typeof page.secret !== "undefined") { %>
     <% const CryptoJS = getCryptoJS(); %>
     <input

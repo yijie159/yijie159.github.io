@@ -18,10 +18,24 @@ const app = Vue.createApp({
     mounted() {
         window.addEventListener("scroll", this.handleScroll, true);
         this.render();
+        this.buildToc();
     },
     methods: {
         render() {
             for (let i of this.renderers) i();
+        },
+        buildToc() {
+            const toc = document.querySelector(".post-toc");
+            if (!toc) return;
+            const headings = [...document.querySelectorAll(".article .content h1, .article .content h2, .article .content h3, .article .content h4, .article .content h5, .article .content h6")];
+            const links = [...toc.querySelectorAll("a.toc-link")];
+            links.forEach((link, index) => {
+                const heading = headings[index];
+                if (!heading) return;
+                const id = `post-heading-${index}`;
+                heading.id = id;
+                link.href = `#${id}`;
+            });
         },
         handleScroll() {
             let wrap = this.$refs.homePostsWrap;
