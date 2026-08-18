@@ -502,7 +502,7 @@ body::-webkit-scrollbar-track {
 .content iframe {
     display: block;
     margin: 15px auto;
-    max-width: 75%;
+    max-width: 100%;
 }
 .copycode {
     color: #5c6b72;
@@ -884,7 +884,7 @@ ol li {
     .article,
     #archives,
     #footer #footer-wrap {
-        width: 900px;
+        width: 850px;
     }
     .home-posts-wrap-no-card #home-posts {
         margin: auto;
