@@ -156,7 +156,10 @@
     async function loadBlogIndex() {
         if (blogIndex !== null) return blogIndex;
         try {
-            const res = await fetch(INDEX_URL, { cache: "force-cache" });
+            // no-cache：每次都向服务器确认索引是否更新，避免浏览器缓存旧索引导致检索不到新文章
+            const res = await fetch(INDEX_URL + (INDEX_URL.includes("?") ? "&" : "?") + "_t=" + Date.now(), {
+                cache: "no-cache",
+            });
             if (!res.ok) {
                 blogIndex = [];
                 return blogIndex;

@@ -99,20 +99,21 @@ search:
 
 # giscus
 # https://github.com/giscus/giscus
+# 配置方法：在 https://giscus.app/zh-CN 填入仓库后获取 repoID / category / categoryID
 giscus:
-    enable: false
+    enable: true
     src: https://giscus.app/client.js
-    repo:
-    repoID:
-    category:
-    categoryID:
+    repo: yijie159/yijie159.github.io
+    repoID: R_kgDOQBgqvA
+    category: Announcements
+    categoryID: DIC_kwDOQBgqvM4DDyKo
     mapping: pathname
     strict: 0
     reactionsEnabled: 1
     emitMetadata: 0
     inputPosition: bottom
     theme: preferred_color_scheme
-    lang:
+    lang: zh-CN
 
 # Gitalk
 # https://github.com/gitalk/gitalk

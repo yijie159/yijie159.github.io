@@ -52,7 +52,7 @@
         <% } %>
     </div>
     <script src="<%- url_for("/js/main.js") %>"></script>
-    <% if (type === "post" && page.comments) { %>
+    <% if (type === "post" && (page.comments !== false)) { %>
     <%- partial("comment") %>
     <% } %>
     <%- partial("chat") %>

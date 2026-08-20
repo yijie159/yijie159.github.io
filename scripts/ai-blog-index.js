@@ -70,6 +70,11 @@ hexo.extend.generator.register('ai_blog_index', function (locals) {
             .map(([name, count]) => ({ name, count })),
     };
 
+    // 构建日志：每次生成索引时打印，便于确认 AI 助手知识库已随部署更新
+    hexo.log.info(
+        `[AI知识库] 已生成 ai-blog-index.json：${index.length} 篇文章，${totalWords} 字，${stats.tags.length} 个标签`
+    );
+
     return {
         path: 'ai-blog-index.json',
         data: JSON.stringify({ stats, posts: index }),

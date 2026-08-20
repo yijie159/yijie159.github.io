@@ -3,7 +3,9 @@
 #   DEEPSEEK_API_KEY = 你的 DeepSeek API Key（platform.deepseek.com 申请）
 
 [build]
-    command = "npm run build"
+    # 每次部署强制 clean + 全量重建：
+    # 确保 ai-blog-index.json（AI 助手知识库）随新文章同步重新生成，不会沿用旧缓存
+    command = "npm run netlify"
     publish = "public"
 
 [build.environment]
