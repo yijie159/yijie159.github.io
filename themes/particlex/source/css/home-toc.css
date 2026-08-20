@@ -1,0 +1,90 @@
+/* 主页左侧文章目录 */
+#home-toc {
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    flex-shrink: 0;
+    width: 220px;
+    max-height: calc(100vh - 120px);
+    margin-right: 20px;
+    padding: 16px 12px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #dbe7f3;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(77, 107, 254, 0.06);
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: none; /* JS 生成内容后显示 */
+}
+
+#home-toc-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3c4043;
+    padding: 4px 8px 12px;
+    border-bottom: 2px solid #eef2f7;
+    margin-bottom: 8px;
+}
+
+#home-toc-title i {
+    color: #4d6bfe;
+}
+
+#home-toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#home-toc-list li {
+    margin: 2px 0;
+}
+
+#home-toc-list a {
+    display: block;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #5c6b72;
+    text-decoration: none;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+
+#home-toc-list a:hover {
+    background: rgba(77, 107, 254, 0.1);
+    color: #4d6bfe;
+}
+
+#home-toc-list a.active {
+    background: linear-gradient(135deg, #4d6bfe, #7b5cff);
+    color: #fff;
+    font-weight: 600;
+}
+
+#home-toc::-webkit-scrollbar {
+    width: 5px;
+}
+
+#home-toc::-webkit-scrollbar-thumb {
+    background: #c9cdd4;
+    border-radius: 3px;
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 移动端隐藏目录（屏幕太窄放不下） */
+@media (max-width: 1024px) {
+    #home-toc {
+        display: none !important;
+    }
+}

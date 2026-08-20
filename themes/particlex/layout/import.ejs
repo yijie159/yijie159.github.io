@@ -52,6 +52,8 @@
 <% } %>
 <% if (type === "index") { %>
 <script src="<%- url_for("/js/lib/home.js") %>"></script>
+<link rel="stylesheet" href="<%- url_for("/css/home-toc.css") %>" />
+<script src="<%- url_for("/js/home-toc.js") %>"></script>
 <% } %>
 <% if (theme.ai_chat && theme.ai_chat.enable) { %>
 <link rel="stylesheet" href="<%- url_for("/css/chat.css") %>" />
