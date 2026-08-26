@@ -7,7 +7,7 @@ tags:
 categories:
   - 天机学堂
 ---
-# MQ基础
+# MQ基础<!--more-->
 
 ## RabbitMQ概念
 
